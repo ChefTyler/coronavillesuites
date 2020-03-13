@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.12.2, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo4.png" type="image/x-icon">
+  <meta name="description" content="If you have booked a room, this is where you pay.">
+  
+  <title>checkout</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,500);
+
+body {
+  padding: 60px 0;
+  background-color: rgba(178,209,229,0.7);
+  margin: 0 auto;
+  width: 600px;
+}
+.body-text {
+  padding: 0 20px 30px 20px;
+  font-family: "Roboto";
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+  line-height: 1.2em;
+}
+.form-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper {
+  background-color: #6FB7E9;
+  width: 100%;
+  display: flex;
+
+}
+.personal-information {
+  background-color: #3C8DC5;
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+}
+h1 {
+  font-size: 1.3em;
+  font-family: "Roboto"
+}
+input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+}
+input[type="text"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #3C8DC5;
+  color: #fff;
+  margin-top: 2px;
+  curson: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+#column-left {
+  width: 46.8%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.8%;
+  float: right;
+}
+
+@media only screen and (max-width: 480px){
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-container {
+    margin: 0 2%;
+  }
+  input {
+    font-size: 1em;
+  }
+  #input-button {
+    width: 100%;
+  }
+  #input-field {
+    width: 96.5%;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+  input {
+    margin: 2px 0;
+  }
+  input[type="submit"]{
+    height: 50px;
+  }
+  #column-left {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+  #column-right {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+}
+  </style>
+  <script>
+
+$('form').card({
+    container: '.card-wrapper',
+    width: 280,
+
+    formSelectors: {
+        nameInput: 'input[name="first-name"], input[name="last-name"]'
+    }
+});
+  </script>
+  
+  
+</head>
+<body>
+  <section class="mbr-section form1 cid-rSTT22Lbbx" id="form1-9">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">
+                    Checkout</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">
+                    Enter your details</h3>
+            </div>
+        </div>
+    </div>
+    <div class="body-text">Write your name in the right fields. Also write your imaginary card number.</div>
+    <form action="paid.html">
+      <div class="form-container">
+        <div class="personal-information">
+          <h1>Payment Information</h1>
+        </div> <!-- end of personal-information -->
+             
+            <input id="column-left" type="text" name="first-name" required="required" placeholder="First Name"/>
+            <input id="column-right" type="text" name="last-name" required="required" placeholder="Surname"/>
+            <input id="input-field" type="text" name="number" required="required" placeholder="Card Number"/>
+            <input id="column-left" type="text" name="expiry" required="required" placeholder="MM / YY"/>
+            <input id="column-right" type="text" name="cvc" required="required" placeholder="CCV"/>
+           
+            <div class="card-wrapper"></div>
+        
+            <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+            <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+            <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+            <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+            <input id="input-button" type="submit" value="Submit"/>
+           </form>
+    </div>
+  
+                <span class="gdpr-block">
+<label>
+<span class="textGDPR" style="color: #232323"><input type="checkbox" name="gdpr" id="gdpr-form1-9" required="">By continuing you agree to our <a style="color: #149dcc; text-decoration: underline;" href="terms.html">Terms of Service</a> and <a style="color: #149dcc; text-decoration: underline;" href="policy.html">Privacy Policy</a>.</span>
+</label>
+</span></form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="engine"><a href="https://northgatech.edu">NGTC homepage</a></section><section once="footers" class="cid-rSTJ6jDrSR" id="footer7-8">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="row row-links">
+                <ul class="foot-menu">
+                    
+                    
+                    
+                    
+                    
+                <li class="foot-menu-item mbr-fonts-style display-7">
+                        <a class="text-white mbr-bold" href="#" target="_blank">About us</a>
+                    </li><li class="foot-menu-item mbr-fonts-style display-7">
+                        <a class="text-white mbr-bold" href="#" target="_blank">Services</a>
+                    </li><li class="foot-menu-item mbr-fonts-style display-7">
+                        <a class="text-white mbr-bold" href="#" target="_blank">Get In Touch</a>
+                    </li><li class="foot-menu-item mbr-fonts-style display-7">
+                        <a class="text-white mbr-bold" href="#" target="_blank">Careers</a>
+                    </li><li class="foot-menu-item mbr-fonts-style display-7">
+                        <a class="text-white mbr-bold" href="#" target="_blank">Work</a>
+                    </li></ul>
+            </div>
+            <div class="row social-row">
+                <div class="social-list align-right pb-2">
+                    
+                    
+                    
+                    
+                    
+                    
+                <div class="soc-item">
+                        <a href="https://twitter.com" target="_blank">
+                            <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://instagram.com" target="_blank">
+                            <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://plus.google.com" target="_blank">
+                            <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div><div class="soc-item">
+                        <a href="https://www.behance.net/" target="_blank">
+                            <span class="socicon-behance socicon mbr-iconfont mbr-iconfont-social"></span>
+                        </a>
+                    </div></div>
+            </div>
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    These aren't clickable but footers look nice.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+<div id="cookie-dialog" style="display: none;"><div id="cookiesdirective"><div style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color: rgb(0, 0, 0); opacity: 0.99; z-index: 9999;"></div><div style="position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: flex; align-items: center; z-index: 10000"><div class="display-7" style="position: relative; width: 100%; max-width: 500px; margin-right: auto; margin-left: auto; font-size:inherit; padding: 1rem; text-align: center; border-radius: .3rem; box-shadow: 0 10px 40px 0 rgba(0,0,0,0.2); color:#ffffff; background:rgba(70, 80, 82, 0.99);">We use cookies to give you the best experience. Read our <a style='color: #55b4d4; text-decoration: underline;' href='privacy.html'>cookie policy</a>.<input style="display: block; margin-top: 10px; margin-right: auto; margin-left: auto; font-size:inherit;;" class="btn btn-sm btn-primary display-7" type="submit" name="impliedsubmit" id="impliedsubmit" value="Agree"/></div></div></div></div>
+  <input name="cookieData" type="hidden" data-cookie-customDialogSelector='#cookie-dialog' data-cookie-colorText='#ffffff' data-cookie-colorBg='rgba(70, 80, 82, 0.99)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#55b4d4' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
+  </body>
+</html>
